@@ -1,6 +1,6 @@
 {
   "name": "select2-tab-fix",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A jquery plugin that fixes the select2 packages tab index problem, where the tab index is broken when focus is set to a select2 input",
   "main": "index.js",
   "scripts": {
