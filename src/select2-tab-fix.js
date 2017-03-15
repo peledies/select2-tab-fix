@@ -1,4 +1,7 @@
 /**
+ * Solution by zDaniels http://stackoverflow.com/a/39605870/909648
+ * Adapted by Deac Karns https://github.com/peledies
+ *
  * WARNING: untested using Select2's option ['selectOnClose'=>true]
  *
  * This code was written because the Select2 widget does not handle
@@ -100,16 +103,8 @@ jQuery(document).ready(function($) {
         }
     });
 
-    /**
-     * Capture event where the user entered a Select2 control using the keyboard.
-     * http://stackoverflow.com/questions/20989458
-     * http://stackoverflow.com/questions/1318076
-     */
     docBody.on('focus', '.select2', function(e) {
         var elSelect = $(this).siblings('select');
-        var test1 = elSelect.is('[disabled]');
-        var test2 = elSelect.is('[data-s2open]');
-        var test3 = $(this).has('.select2-selection--single').length;
         if (elSelect.is('[disabled]')==false && elSelect.is('[data-s2open]')==false
             && $(this).has('.select2-selection--single').length>0) {
             elSelect.attr('data-s2open', 1);
