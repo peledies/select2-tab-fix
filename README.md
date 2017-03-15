@@ -14,5 +14,5 @@ bower select2-tab-fix
 ### Include
 Include these files
 ```
-<script src="bower_components/select2-tab-fix/src/select2-tab-fix.js"></script>
+<script src="bower_components/select2-tab-fix/src/select2-tab-fix.min.js"></script>
 ```
