@@ -91,7 +91,7 @@ jQuery(document).ready(function($) {
              */
             var inputs = currentForm.find(':input:enabled:not([readonly], input:hidden, button:hidden, textarea:hidden)')
                 .not(function() { // do not include inputs with hidden parents
-                    return $(this).parent().is(':hidden');
+                    return $(this).parent().is(':hidden') || $(this).hasClass("select2-search__field");
                 });
             var elFocus = null;
             $.each(inputs, function(index) {
