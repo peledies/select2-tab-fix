@@ -66,6 +66,7 @@ jQuery(document).ready(function($) {
     docBody.on('select2:close', function(e) {
         var elSelect = $(e.target);
         elSelect.removeAttr('data-s2open');
+	if(elSelect.attr('noAutoMove')) return;
         var currentForm = elSelect.closest('form');
         var othersOpen = currentForm.has('[data-s2open]').length;
         if (othersOpen == 0 && clickedOutside==false) {
