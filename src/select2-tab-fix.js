@@ -77,7 +77,7 @@ jQuery(document).ready(function($) {
         _moveToNextElement($(e.target));
     })
 
-    _moveToNextElement(currentSelectedElement) {
+    function _moveToNextElement(currentSelectedElement) {
 
         currentSelectedElement.removeAttr('data-s2open');
         var currentForm = currentSelectedElement.closest('form');
